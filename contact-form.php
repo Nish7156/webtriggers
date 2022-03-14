@@ -15,6 +15,7 @@ else{
     window.location.href='index.html';
             window.history.log(-1);
           </script>";
+   
 }
 
 ?>
