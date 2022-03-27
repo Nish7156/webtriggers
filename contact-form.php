@@ -10,7 +10,7 @@ if(empty($Name) && empty($Email)){
     echo ('Please fill all the fields');
 }
 else{
-    mail("info@webtriggers.tech", "Message From webTriggers.com - "subject: ".$Subject,"Name: ".$Name."Phone: " .$Phone." Message: " .$Message." Email: ".$Email, $header);
+    mail("info@webtriggers.tech", "Message From webTriggers.com - "subject: ".$Subject."Name: ".$Name."Phone: " .$Phone." Message: " .$Message." Email: ".$Email, $header);
     echo "<script type='text/javascript'> alert('Your Message sent successfully');
     window.location.href='index.html';
             window.history.log(-1);
