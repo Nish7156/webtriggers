@@ -3,10 +3,9 @@
 $Name = $_REQUEST['name'];
 $Email = $_REQUEST['email'];
 $Phone = $_REQUEST['phone'];
-$Subject = $_REQUEST['subject'];
 $Message = $_REQUEST['message'];
 $header = $Email;
-if(empty($Name) && empty($Email) && empty($Subject) && empty($Message)){
+if(empty($Name) && empty($Email) && empty($Message)){
     echo ('Please fill all the fields');
 }
 else{
