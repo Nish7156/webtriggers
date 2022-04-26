@@ -11,6 +11,7 @@ if(empty($Name) && empty($Email) && empty($Message)){
 else{
     mail("webtriggers11@gmail.com", "Message From webTriggers.com - ".$Subject,"Name: ".$Name."Phone: " .$Phone." Message: " .$Message." Email: ".$Email, $header);
     echo "alert('Your Message sent successfully')";
+    echo "<meta http-equiv='refresh' content='0'>";
 }
 
 
