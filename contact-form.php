@@ -1,18 +1,6 @@
 <?php
-
-$Name = $_REQUEST['name'];
-$Email = $_REQUEST['email'];
-$Phone = $_REQUEST['phone'];
-$Message = $_REQUEST['message'];
-$header = $Email;
-if(empty($Name) && empty($Email) && empty($Message)){
-    echo ('Please fill all the fields');
+if($_POST["Message"]) {
+mail("shedagenishant40@gmail.com", "xxxxxxxxxxxx",
+$_POST["Insert Your Message"]. "From: NS");
 }
-else{
-    mail("webtriggers11@gmail.com", "Message From webTriggers.com - ".$Subject,"Name: ".$Name."Phone: " .$Phone." Message: " .$Message." Email: ".$Email, $header);
-    echo "alert('Your Message sent successfully')";
-    
-   
-}
-
 ?>
