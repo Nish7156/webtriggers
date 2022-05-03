@@ -1,17 +1,16 @@
 <?php
-//get data from form  
 
-$name = $_POST['name'];
-$email= $_POST['email'];
-$message= $_POST['message'];
-$to = "shedagenishant40@gmail.com";
-$subject = "Mail From website";
-$txt ="Name = ". $name . "\r\n  Email = " . $email . "\r\n Message =" . $message;
-$headers = "From: noreply@webtriggers.com" . "\r\n" .
-"CC: somebodyelse@example.com";
-if($email!=NULL){
-    mail($to,$subject,$txt,$headers);
+
+if($_POST["message"]) {
+
+
+mail("shedagenishant33@gmail.com", "Here is the subject line",
+
+
+$_POST["insert your message here"]. "From: an@email.address");
+
+
 }
-//redirect
-header("Location:thankyou.html");
+
+
 ?>
