@@ -84,7 +84,6 @@ body {
     .show-notice{
       display: block;
       width: auto;
-      background-color: #403ca8;
       color: white;
       bottom: 18px;
       position: relative;
