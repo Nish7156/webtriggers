@@ -187,7 +187,7 @@ function downloadModal(event, value1, value2) {
 						$('#notice').removeClass('show-notice');
 						$('#notice').addClass('hide-notice');
 			
-					}, 4000)
+					}, 400000000)
 					
 					//$("#myElem").show();
 					//	setTimeout(function() { $("#myElem").hide(); }, 5000);
