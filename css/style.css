@@ -82,15 +82,15 @@ body {
     } 
     }
     .show-notice{
-      display: block;
-      width: auto;
-      color: white;
-      bottom: 18px;
-      position: relative;
-      left: 0rem;
-      font-weight: bold;
-      text-align: center;
-      font-size: 20px;
+        display: block;
+        width: 100%;
+        color: white;
+        bottom: -40px;
+        position: relative;
+        left: 1rem;
+        font-weight: bold;
+        text-align: center;
+        font-size: 17px;
     }
     .hide-notice{
       display:none;

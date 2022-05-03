@@ -151,6 +151,18 @@ function downloadModal(event, value1, value2) {
 			array.push("Email required")
 	
 		  }
+          else if(phone == '')
+          {
+            $('#phone').focus();
+            array.push("Phone required")
+
+          }
+          else if(message == '')
+          {
+            $('#message').focus();
+            array.push("Message required")
+
+          }
 		  return array;	 
 	} 
 	$('#submitsales-form').click(function(event) {
@@ -164,6 +176,8 @@ function downloadModal(event, value1, value2) {
 				name:$("#name").val(),
 				email:$("#email").val(),
                 phone:$("#phone").val(),
+                message:$("#message").val()
+
 			} 
 			
 			$.ajax({
@@ -187,7 +201,7 @@ function downloadModal(event, value1, value2) {
 						$('#notice').removeClass('show-notice');
 						$('#notice').addClass('hide-notice');
 			
-					}, 400000000)
+					}, 4000)
 					
 					//$("#myElem").show();
 					//	setTimeout(function() { $("#myElem").hide(); }, 5000);
