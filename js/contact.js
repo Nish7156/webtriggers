@@ -123,6 +123,9 @@ function downloadModal(event, value1, value2) {
                 phone: {
                     required: true,
                 },
+				about:{
+					required: true,
+				}
 			}
 		});
 	}
@@ -131,8 +134,8 @@ function downloadModal(event, value1, value2) {
 		let array=[];
 		var name = $('#name').val();
 		var email = $('#email').val();
-		var message = $('#message').val();
         var phone = $('#phone').val();
+		var about = $('#about').val();
 		var indexat = email.indexOf("@"); //Index of "@" in the email field
 		var indexdot = email.indexOf("."); 
 
@@ -154,7 +157,11 @@ function downloadModal(event, value1, value2) {
             array.push("Phone required")
 
           }
-          else if(message == '')
+		  else if(about >1)		  {
+			$('#about').focus();
+			array.push("about required")
+		  }
+		 
 		  return array;	 
 	} 
 	$('#submitsales-form').click(function(event) {
@@ -168,7 +175,7 @@ function downloadModal(event, value1, value2) {
 				name:$("#name").val(),
 				email:$("#email").val(),
                 phone:$("#phone").val(),
-                message:$("#message").val()
+                about:$("#about").val(),
 
 			} 
 			
