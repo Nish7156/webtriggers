@@ -123,9 +123,6 @@ function downloadModal(event, value1, value2) {
                 phone: {
                     required: true,
                 },
-				message: {
-					required: true
-				},
 			}
 		});
 	}
@@ -158,11 +155,6 @@ function downloadModal(event, value1, value2) {
 
           }
           else if(message == '')
-          {
-            $('#message').focus();
-            array.push("Message required")
-
-          }
 		  return array;	 
 	} 
 	$('#submitsales-form').click(function(event) {
