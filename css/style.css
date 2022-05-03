@@ -44,30 +44,67 @@ body {
 @-o-viewport {
     width: device-width;
 }
-.show-notice{
+.show-errornotice{
     display: block;
-    width: auto;
-    background-color: #403ca8;
-    color: white;
-    bottom: 18px;
-    position: relative;
-    left: 0rem;
-    font-weight: bold;
-    text-align: center;
-    font-size: 20px;
-  }
-  .hide-notice{
-    display:none;
-    width: 61%;
-    background-color: #2f7a78;
+    width: 51%;
+    background-color: rgb(241, 131, 131);
     color: white;
     bottom: 69px;
     position: relative;
     left: 15rem;
     font-weight: bold;
-    text-align: center;
-    font-size:20px;
+      text-align: center;
+      font-size:20px;
   }
+  .hide-errornotice{
+    display:none;
+    width: 51%;
+    background-color:rgb(241, 131, 131);
+    color: white;
+    bottom: 69px;
+    position: relative;
+    left: 15rem;
+    font-weight: bold;
+      text-align: center;
+      font-size:20px;
+  }
+  @media screen and (min-width: 768px) {
+    .f5{
+      margin-bottom:-15rem;
+    }
+  }
+  @media screen and (min-width: 768px) {
+    .img-size {
+      width: 22%;
+      position: relative;
+      top: -1.7rem;
+      left: 2rem;
+    } 
+    }
+    .show-notice{
+      display: block;
+      width: auto;
+      background-color: #403ca8;
+      color: white;
+      bottom: 18px;
+      position: relative;
+      left: 0rem;
+      font-weight: bold;
+      text-align: center;
+      font-size: 20px;
+    }
+    .hide-notice{
+      display:none;
+      width: 61%;
+      background-color: #2f7a78;
+      color: white;
+      bottom: 69px;
+      position: relative;
+      left: 15rem;
+      font-weight: bold;
+      text-align: center;
+      font-size:20px;
+    }
 
 @-ms-viewport {
     width: device-width;
