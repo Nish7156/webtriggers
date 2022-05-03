@@ -97,13 +97,14 @@
                                 <div class="col-md-6">
                                     <div id="contact-form" class="fl-wrap">
                                         <div id="message"></div>
-                                        <form class="custom-form" action="php/contact.php" name="contactform" id="contactform">
+                                        <form class="custom-form" method="post" class="sales-form" id="contactForm">
                                             <fieldset>
                                                 <input type="text" name="name" id="name" placeholder="Your Name *" class="cnt-anim" value="" />
                                                 <input type="text" name="email" id="email" placeholder="Email Address *" class="cnt-anim" value="" />
                                                 <input type="text" name="phone" id="email" placeholder="Phone No*" class="cnt-anim" value="" />
-                                                <textarea name="message" id="comments" cols="40" rows="3" placeholder="Your Message:" class="cnt-anim"></textarea>
-                                                <button class="cnt-anim" id="submit">Send Message </button>
+                                                <input type="text" name="message" id="message" class="cnt-anim" value="">
+                                                <textarea name="message" id="message" cols="40" rows="3" placeholder="Your Message:" class="cnt-anim" value=""></textarea>
+                                                <button class="cnt-anim" type="submit" name="submit" value="Send" class="btn btn-info" id="submitsales-form">Send Message </button>
                                             </fieldset>
                                         </form>
                                          <!-- <form action="mail.php" method="post">
@@ -187,6 +188,7 @@
     <script src="js/jquery.min.js"></script>
     <script src="js/plugins.js"></script>
     <script src="js/scripts.js"></script>
+    <script src="./js/contact.js"></script>
 </body>
 
 </html>
