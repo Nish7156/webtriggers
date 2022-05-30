@@ -2761,11 +2761,11 @@ blockquote p {
 }
 
 .share-icon-facebook:before {
-    content: "\f39e";
+    content: "\f232";
 }
 
 .share-icon-twitter:before {
-    content: "\f099";
+    content: "\f16d";
 }
 
 .share-icon-tumblr:before {
